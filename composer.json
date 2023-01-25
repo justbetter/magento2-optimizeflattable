@@ -1,0 +1,23 @@
+{
+  "name": "justbetter/magento2-optimizeflattable",
+  "description": "Module for optimizing Magento flat table generation",
+  "require": {
+    "php": ">=8.1"
+  },
+  "type": "magento2-module",
+  "authors": [
+    {
+      "name": "Robin Mulder",
+      "email": "robin@justbetter.nl"
+    }
+  ],
+
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "JustBetter\\OptimizeFlatTables\\": ""
+    }
+  }
+}
