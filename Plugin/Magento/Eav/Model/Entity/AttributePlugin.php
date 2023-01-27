@@ -5,7 +5,7 @@ namespace JustBetter\OptimizeFlatTables\Plugin\Magento\Eav\Model\Entity;
 use Magento\Catalog\Model\ResourceModel\Attribute;
 use Magento\Eav\Model\Entity\Attribute\AbstractAttribute;
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Zend_Db_Expr as Zend_Db_Expr;
+use Zend_Db_Expr;
 
 class AttributePlugin
 {
