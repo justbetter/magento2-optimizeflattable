@@ -3,6 +3,7 @@
     <module name="JustBetter_OptimizeFlatTables" setup_version="1.0.0">
         <sequence>
             <module name="Magento_Eav" />
+            <module name="Magento_Catalog" />
         </sequence>
     </module>
 </config>
