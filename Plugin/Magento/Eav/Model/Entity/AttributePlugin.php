@@ -36,7 +36,7 @@ class AttributePlugin
         return $this->scopeConfig->isSetFlag('justbetter/flat_tables/enabled');
     }
 
-    public function getMargin($type = 'varchar'): int
+    public function getMargin(string $type = 'varchar'): int
     {
         return (int)$this->scopeConfig->getValue('justbetter/flat_tables/' . $type . '_margin');
     }
