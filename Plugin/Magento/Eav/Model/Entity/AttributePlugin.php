@@ -11,9 +11,8 @@ class AttributePlugin
 {
     public function __construct(
         protected ScopeConfigInterface $scopeConfig,
-        protected Attribute            $attributeResource
-    )
-    {
+        protected Attribute $attributeResource
+    ) {
     }
 
     public function after_getFlatColumnsDdlDefinition(AbstractAttribute $subject, array $result): array
