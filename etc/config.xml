@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <justbetter>
+            <flat_tables>
+                <enabled>1</enabled>
+                <varchar_margin>10</varchar_margin>
+            </flat_tables>
+        </justbetter>
+    </default>
+</config>
