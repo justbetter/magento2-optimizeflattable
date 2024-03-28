@@ -3,4 +3,7 @@
     <type name="Magento\Eav\Model\Entity\Attribute\AbstractAttribute">
         <plugin name="justbetter.optimize.product.flat.table" type="JustBetter\OptimizeFlatTables\Plugin\Magento\Eav\Model\Entity\AttributePlugin" />
     </type>
+    <type name="Magento\Eav\Model\Entity\Attribute\Source\Table">
+        <plugin name="justbetter.optimize.product.flat.source.table" type="JustBetter\OptimizeFlatTables\Plugin\Magento\Eav\Model\Entity\Attribute\Source\TablePlugin" />
+    </type>
 </config>
