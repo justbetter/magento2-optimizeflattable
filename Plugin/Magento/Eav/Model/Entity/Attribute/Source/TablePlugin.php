@@ -3,6 +3,7 @@
 namespace JustBetter\OptimizeFlatTables\Plugin\Magento\Eav\Model\Entity\Attribute\Source;
 
 use Magento\Catalog\Model\ResourceModel\Attribute;
+use Magento\Framework\DB\Adapter\AdapterInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use JustBetter\OptimizeFlatTables\Plugin\Magento\Eav\Model\Entity\BasePlugin;
 use Zend_Db_Expr;
@@ -12,7 +13,7 @@ class TablePlugin extends BasePlugin
 
     public function afterGetFlatColumns (\Magento\Eav\Model\Entity\Attribute\Source\Table $subject, array $result) : array
     {
-        if ($this->isEnabled() && $connection = $this->attributeResource->getConnection() && $subject->getAttribute()->getFrontend()->getInputType() !== 'multiselect') {
+        if ($this->isEnabled() && $subject->getAttribute()->getFrontend()->getInputType() !== 'multiselect' && $connection = $this->attributeResource->getConnection()) {
             $optionTable = $connection->getTableName('eav_attribute_option');
             $optionValueTable = $connection->getTableName('eav_attribute_option_value');
             $select = $connection
@@ -25,7 +26,7 @@ class TablePlugin extends BasePlugin
 
             $result[$subject->getAttribute()->getAttributeCode() . '_value']['length'] = $length + $this->getMargin();
         }
-        
+
         return $result;
     }
 }
