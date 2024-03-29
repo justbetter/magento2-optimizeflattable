@@ -25,7 +25,7 @@ class TablePlugin extends BasePlugin
 
             $result[$subject->getAttribute()->getAttributeCode() . '_value']['length'] = $length + $this->getMargin();
         }
-        g
+        
         return $result;
     }
 }
