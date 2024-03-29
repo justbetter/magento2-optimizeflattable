@@ -3,7 +3,6 @@
 namespace JustBetter\OptimizeFlatTables\Plugin\Magento\Eav\Model\Entity\Attribute\Source;
 
 use Magento\Catalog\Model\ResourceModel\Attribute;
-use Magento\Framework\DB\Adapter\AdapterInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use JustBetter\OptimizeFlatTables\Plugin\Magento\Eav\Model\Entity\BasePlugin;
 use Zend_Db_Expr;
